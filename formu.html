@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>apps e sites</title>
+  
+  <style>
+    
+    body {
+      
+  background-color: black;
+      color: white;
+      text-align: center;
+      
+    }
+    
+    div {
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+      
+      
+    }
+    
+    button {
+      
+      
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+      
+      
+    }
+    
+    input {
+      
+      outline: none;
+      background-color: lightgray;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div id="divv">
+    
+  
+
+  <form action="https://formsubmit.co/scaio5428@gmail.com" method="post">
+    
+    <input type="hidden" name="_captcha" value="false">
+    
+    <h2>Preencham os campos:</h2>
+ <h3>Número do WhatsApp:</h3>
+    <input type="hidden" name="_subject" value="Novo envio!">
+   <input id="numero" type="number" placeholder="WhatsApp..." name="WhatsApp" required>
+   <h3>Seu "@" Do Instagram:</h3>
+   
+   <input id="insta" type="text" name="Instagram" placeholder="instagram..." required>
+    <h3>Seu e-mail:</h3>
+    
+    <input type="hidden" name="_autoresponse" value="Olá! Recebi seu pedido, entrarei em contato com você para discutir sobre o tipo de site ou app vc quer.">
+    <input type="email" name="email" placeholder="Endereço de e-mail">
+  <h3>Por último, seu nome:</h3>
+    
+    <input id="nome" type="text" name="Nome" placeholder="Seu nome..." required>
+    <br><br>
+    <button id="bt" type="submit">Enviar</button>
+    
+    <p>Dúvidas? <br>Te explicaremos qualquer coisa quando entrarmos em contato!</p>
+    <p>Usaremos os dados que você digitou para entrar em contato com você!</p>
+  </form>
+
+  </div>
+ 
+ 
+   <script>
+     
+     function enviar() {
+     var nome = document.getElementById("nome").value
+     var insta = document.getElementById("insta").value
+     var zap = document.getElementById("numero")
+     var div = document.getElementById("divv")
+     
+     if (!zap || !insta || !nome) {
+       
+       alert("Não deixe nada em branco...")
+       
+       
+     } else {
+     var botao = document.getElementById("bt")
+     botao.innerHTML = "Aguarde..."
+     
+     
+     div.innerHTML = `
+     
+     <h3>Entraremos em contado com você logo logo!</h3>
+     
+     `
+     
+     div.style.marginTop = 230 + "px"
+     
+     }
+     }
+  
+  
+   </script>
+
+</body>
+
+</html>
