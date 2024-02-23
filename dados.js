@@ -5,8 +5,7 @@ var data = new Date()
 var mes = data.toLocaleString('pt-BR', { month: 'long' });
 console.log(mes);
 var hora = data.getHours()+":"+data.getMinutes()
-var dia = data.getDate() +"/"+mes+"/"
-+data.getFullYear()+" Hora: "+hora
+var dia = data.getDate() + "/" + mes + "/" + data.getFullYear() + " Hora: " + hora;
 
 
 if (nome === null) {
