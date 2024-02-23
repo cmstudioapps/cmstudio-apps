@@ -1,4 +1,5 @@
 var nome = localStorage.getItem("nome")
+var concordo = localStorage.getItem("termo")
 
 var acessando = window.location.href;
 var data = new Date()
@@ -15,7 +16,7 @@ localStorage.setItem("nome",nome)
 
 }
 
-fetch('https://api.sheetmonkey.io/form/pQQpZrU83ib6ocCX93j2oS', {
+fetch('https://api.sheetmonkey.io/form/oNuYY9SZV3FyUy2cyxeHcD', {
     
     method: 'post',
     headers: {
@@ -28,7 +29,8 @@ fetch('https://api.sheetmonkey.io/form/pQQpZrU83ib6ocCX93j2oS', {
       
       Usuário: nome,
       aceessando: acessando,
-      Data: dia
+      Data: dia,
+     Termo: concordo
       
       
       
