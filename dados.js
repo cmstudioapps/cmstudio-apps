@@ -28,7 +28,7 @@ fetch('https://api.sheetmonkey.io/form/pQQpZrU83ib6ocCX93j2oS', {
     body: JSON.stringify({
       
       Usuário: nome,
-      acessando: acessando,
+      aceessando: acessando,
       Data: dia
       
       
