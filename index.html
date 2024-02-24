@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta property="og:image" content="https://i.imgur.com/CfeIRgP.jpeg">
   <link rel="stylesheet" href="style.css">
   <title>CM STUDIO - sites e apps</title>
 </head>
@@ -19,15 +18,6 @@
     
   </header>
   <hr>
-<div id="sobre">
- <details>
-  <summary>Sobre Nós:</summary>
-  <p>CM STUDIO é um perfil de programadores web criado por Caio que desenvolvem aplicativos e sites para o seu negócio!</p>
-  <br>
-  <h3>Localização física - Cabrobó-PE</h3>
-</details>
-</div>
-
   <section>
     
     
@@ -38,7 +28,7 @@
  <p>Seu negócio agora é digital!</p>
       
       <br>
-  <button id="sim" onclick="sim()">Sim eu quero!</button>
+ <button id="sim" id="open-chatra">Enviar mensagem</button>
       
     </div>
     <h3>Sites/apps que ja criamos:</h3>
@@ -65,9 +55,6 @@ se você quiser nós podemos recomendar servidores que é muito raro acontecer q
   <h4>Podemos afirmar que é extremamente RARO essas quedas acontecerem.</h4>
 <br>
 
-<h4>O que é um servidor? <br> Bom, simplificando para aqules que não entendem, um servidor é um local na Internet onde você publica seu site ou aplicativo. <a href="https://coodesh.com/blog/dicionario/o-que-e-um-servidor/">Clique aqui para uma explicação mais profissional.</a> <br> PRECISO SABER SOBRE SERVIDORES? <br>A resposta é NÃO, quem vai cuidar disso somos nós.</h4>
-<br>
-
 <button id="concordo" onclick="concordei()" style="background-color: red; border: none;
 padding: 10px; color: white; font-weight: bold" onclick="concordo()">Concordar</button>
       
@@ -78,7 +65,28 @@ padding: 10px; color: white; font-weight: bold" onclick="concordo()">Concordar</
   </section>
   
 </body>
-<script src="main.js">main.js</script>
-<script src="dados.js">dados.js</script>
 
+  
+  <script>
+  
+   document.getElementById('open-chatra').addEventListener('click', function() {
+        Chatra('openChat', true);
+    });
+  
+  
+  
+    (function(d, w, c) {
+        w.ChatraID = 'LQnrWiXFxKmhKMTta';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+  
+
+<script src="main.js">main.js</script>
 </html>
