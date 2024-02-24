@@ -86,7 +86,18 @@ padding: 10px; color: white; font-weight: bold" onclick="concordo()">Concordar</
         if (d.head) d.head.appendChild(s);
     })(document, window, 'Chatra');
 </script>
+  <script>
+    
+    window.addEventListener('beforeunload', function(event) {
+    // Aqui você pode executar ações que deseja realizar antes da página ser descarregada
+    alert("Não conseguiu entrar em contato? estamos estabilizando o site, voltaremos logo")
+    // Por exemplo, exibir uma mensagem de confirmação
+    event.preventDefault();
   
+});
+    
+    
+  </script>
 
 <script src="main.js">main.js</script>
 </html>
