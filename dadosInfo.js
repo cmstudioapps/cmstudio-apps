@@ -1,6 +1,6 @@
 //O Código javascript que verifica se o usuários ja colocou um nome, se não ele solicita o nome do usuário.
 //  Caso o usuário ainda não tenha um ID, o código gerará um ID de 4 digitos.
-
+var h1 = document.getElementById("rian")
 let nome = localStorage.getItem("nome") || "Usuário"
 let ID = localStorage.getItem("ID") || 0
 if (nome == "Usuário" || ID == 0) {
@@ -10,6 +10,8 @@ if (nome == "Usuário" || ID == 0) {
   
   ID = Math.floor(Math.random() * 90000) + 10000;
   localStorage.setItem("ID",ID)
+} else {
+h1.innerHTML = nome
 }
 
 console.log(nome)
