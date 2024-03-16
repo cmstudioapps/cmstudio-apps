@@ -46,6 +46,6 @@ console.log(dia)
 
 let rede = navigator.connection.effectiveType
 
-
+console.log("Tipo de rede: "+rede)
 //Ao todo, os dados enviados ao desenvolvedor são:
 //Data, Página acessado no momento, nome e ID e a largura da tela.
