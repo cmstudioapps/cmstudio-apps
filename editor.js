@@ -45,7 +45,7 @@ function URRL() {
 
   var url = window.location.href
 if (url.includes("editor.js")) {
-  location.replace("https://pratique-js.gamejolt.io")
+  window.location.replace("https://pratique-js.gamejolt.io")
   }
   
 }
