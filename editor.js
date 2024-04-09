@@ -41,11 +41,14 @@ function salvar() {
   
 }
 
-window.addEventListener("keyup", function() {
+function URRL() {
+
   var url = window.location.href
 if (url.includes("main.js")) {
   location.replace("https://pratique-js.gamejolt.io")
   }
   
-})
+}
+
+setInterval(URRL,20)
  
