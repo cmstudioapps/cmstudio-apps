@@ -44,7 +44,7 @@ function salvar() {
 function URRL() {
 
   var url = window.location.href
-if (url.includes("main.js")) {
+if (url.includes("editor.js")) {
   location.replace("https://pratique-js.gamejolt.io")
   }
   
