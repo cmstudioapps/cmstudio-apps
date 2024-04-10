@@ -1,6 +1,4 @@
-if (window.location.hostname !== 'https://pratique-js.gamejolt.io') {
-    throw new Error('Acesso não autorizado!');
-}
+
 
 var codigo = localStorage.getItem("codigo")
 
@@ -45,13 +43,3 @@ function salvar() {
   
 }
 
-function URRL() {
-
-  var url = window.location.href
-if (url.includes("editor.js")) {
-  window.location.replace("https://pratique-js.gamejolt.io")
-  }
-  
-}
-
-setInterval(URRL,20)
