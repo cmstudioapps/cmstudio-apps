@@ -1,3 +1,3 @@
 alert("Tá funcionando!!")
 
-console.log("Oooii")
+console.log("Tudo baum?")
